@@ -1,9 +1,7 @@
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -17,6 +15,23 @@ public class HW3 {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy="eager";
     }
+
+    String firstName = "Kate",
+            lastName = "Hanami",
+            email = "test@test.com",
+            gender = "Female",
+            number = "8737891087",
+            year = "2000",
+            month = "August",
+            day = "02",
+            subject = "Maths",
+            hobby = "Sports",
+            picture = "msk.jpg",
+            address = "Duck 3",
+            state = "NCR",
+            city = "Delhi";
+    String tablesValueXpath = "//td[text()='%s']/../td[text()='%s']";
+
     @Test
     void testForm() {
         open("/automation-practice-form");
@@ -26,21 +41,7 @@ public class HW3 {
 
 
 
-        String firstName = "Kate",
-                lastName = "Hanami",
-                email = "test@test.com",
-                gender = "Female",
-                number = "8737891087",
-                year = "2000",
-                month = "August",
-                day = "02",
-                subject = "Maths",
-                hobby = "Sports",
-                picture = "msk.jpg",
-                address = "Duck 3",
-                state = "NCR",
-                city = "Delhi";
-        String tablesValueXpath = "//td[text()='%s']/../td[text()='%s']";
+
 
 
         $("#firstName").setValue(firstName);
