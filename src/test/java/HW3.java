@@ -24,37 +24,7 @@ public class HW3 {
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
-//
-//        $x("//input[@id='firstName']").setValue("Kate");
-//        $x("//input[@id='lastName']").setValue("Hanami");
-//        $x("//input[@id='userEmail']").setValue("pass@gmail.com");
-//        $x("//*[contains(text(),'Female')]").click();
-//        $x("//input[@id='userNumber']").setValue("+792510029");
-//        $x("//input[@id='dateOfBirthInput']").click();
-//        $x("//select[@class= 'react-datepicker__month-select']").selectOption("June");
-//        $x("//select[@class= 'react-datepicker__year-select']").selectOption("2000");
-//        $x("//div[@class= 'react-datepicker__day react-datepicker__day--019']").click();
-//        $("#subjectsInput").setValue("Math").pressEnter();
-//        $("label[for='hobbies-checkbox-2']").click();
-//        $x("//input[@type='file']").uploadFromClasspath("msk.jpg");
-//        $("#currentAddress").setValue("Frog, 3");
-//        $("#react-select-3-input").setValue("NCR").pressEnter();
-//        $("#react-select-4-input").setValue("Delhi").pressEnter();
-//
-//
-//        $("#submit").click();
-//
-////        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-//
-//        $x("//div[@class='modal-body']").shouldHave(
-//                text("Kate" +" "+ "Hanami"),
-//                text("pass@gmail.com"),
-//                text("+792510029"),
-//                text("Frog, 3"),
-//                text("NCR" +" "+"Delhi")
-//        );
-//
-//    }
+
 
         String firstName = "Kate",
                 lastName = "Hanami",
